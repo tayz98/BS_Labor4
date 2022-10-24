@@ -45,7 +45,7 @@ void askForFile(char *string) {
 	if (string[0] == '\n') { // falls das erste Zeichen ein Enter ist, hat die Datei keinen Namen. Das Programm terminiert dann.
 		printf("Fehler: Keine Eingabe und mit Enter bestätigt.\n");
 		_exit(0);
-	} else { // newline wird ersetzt werden durch Nullbyte
+	} else { // newline wird ersetzt durch Nullbyte
 		for(int i = 0; i < MAXLENGTH; i++ ) {
 			if (string[i] == '\n') {
 				string[i] = 0x0;
